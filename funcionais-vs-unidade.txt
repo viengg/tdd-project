@@ -1,0 +1,6 @@
+Testes de unidade testam classes de maneira independente, enquanto
+testes funcionais testam funcionalidades completas do sistema do
+ponto de vista do usuário.
+
+Testes de unidade são mais rápidos e menos custosos, enquanto os
+testes funcionais são mais lentos e mais custosos.
