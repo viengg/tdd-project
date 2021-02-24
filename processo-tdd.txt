@@ -1,0 +1,8 @@
+Primeiro, o teste funcional é escrito, de forma que simule a interação do ponto de vista do
+usuário com a nossa aplicação. Depois esse teste é rodado e, como não há implementação alguma,
+o teste obviamente falha. Com o teste funcional falhando, entramos em outro "subciclo" do TDD,
+mas agora tratando apenas de testes de unidade. Nele, os testes de unidade são escritos e, caso
+falhem, é escrito o código mínimo para fazer o teste passar. Também há a opção de refatorar o 
+código, caso necessário. Depois que o "subciclo" interno acaba, voltamos para o ciclo mais externo,
+que também admite refatoração. O processo se repete até que a interação descrita no teste funcional
+esteja ocorrendo corretamente.
