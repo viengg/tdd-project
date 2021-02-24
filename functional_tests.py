@@ -8,8 +8,8 @@ class NewVisitorTest(unittest.TestCase):
     def setUp(self):  
         self.browser = webdriver.Firefox()
 
-    def tearDown(self):  
-        self.browser.quit()
+    #def tearDown(self):  
+    #    self.browser.quit()
 
     def test_can_start_a_list_and_retrieve_it_later(self):  
         # Maria decidiu utilizar o novo app TODO. Ela entra em sua página principal:
@@ -35,7 +35,8 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
-            any(row.text == '1: Estudar testes funcionais' for row in rows)
+            any(row.text == '1: Estudar testes funcionais' for row in rows),
+            "New to-do item did not appear in table"
         )
         
         # Ainda existe uma caixa de texto convidando para adicionar outro item
